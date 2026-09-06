@@ -15,8 +15,14 @@ from rosidl_runtime_py.utilities import get_message
 TOPICS_TO_SUBSCRIBE = [
     '/Laser_map',
     '/Odometry',
+    '/cf_0/imu',
+    '/cf_0/lidar/points',
+    '/cf_0/odom',
     '/cf_1/accgyro',
+    '/cf_1/cmd_vel_legacy',
+    '/cf_1/motorpower',
     '/cf_1/motors',
+    '/cf_1/pose',
     '/cf_1/quaternions',
     '/cf_1/robot_description',
     '/clicked_point',
@@ -31,6 +37,7 @@ TOPICS_TO_SUBSCRIBE = [
     '/goal_pose',
     '/initialpose',
     '/joy',
+    '/jumping_state',
     '/livox/accgyro',
     '/livox/imu',
     '/ompl_rrt_star_trajectory',
@@ -39,7 +46,10 @@ TOPICS_TO_SUBSCRIBE = [
     '/rosout',
     '/rrt_star_grid',
     '/tf',
+    '/tf_static',
+    '/trajectory_queue_state',
     '/trajectory_start_position',
+    '/visited_waypoint',
 ]
 
 SKIP_MSG_TYPES = [
