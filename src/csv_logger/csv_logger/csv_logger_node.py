@@ -191,7 +191,7 @@ def main(args=None):
 
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     # Use fixed path to workspace csv_files folder
-    output_dir = Path.home() / 'ros2bag_to_csv' / 'csv_files' / timestamp
+    output_dir = Path.home() / 'CrazySim' / 'data' / 'data_ballistic_planner' / 'hop_tracking' / timestamp
 
     node = CSVLoggerNode(output_dir)
     executor = MultiThreadedExecutor()
